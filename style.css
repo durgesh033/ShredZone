@@ -1,0 +1,270 @@
+.navbar-img {
+    width: 300px; 
+    height: 400px; 
+left:-10;
+position:absolute;
+margin-left:0;
+margin-top:10;
+}
+.hero {
+    background-image: url('fit.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    color: white; /* Ensures text is readable on the background */
+    padding: 80px 0; /* Increases the vertical space within the header */
+    height: 550px; /* Adjusts the overall height of the header */
+}
+/* Navbar styling */
+.navbar {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    color: white !important; /* Set default color of nav links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+}
+
+/* Hover effects on navbar links */
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important; /* Gold color on hover */
+    transform: scale(1.1); /* Slightly enlarge the text */
+}
+
+/* Active link (when clicked) */
+.navbar-nav .nav-item.active .nav-link {
+    color: #ff6347 !important; /* Tomato color when active */
+}
+
+/* Hover effect for navbar background */
+.navbar:hover {
+    background-color: #28a745; /* Change navbar background on hover */
+}
+
+/* Styling for the logo image (if you want it to have hover effects too) */
+.navbar-logo {
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: rotate(360deg); /* Rotate logo on hover */
+}
+/* Adjusting the container in the header section */
+/* Hero Section Styling */
+.hero .container {
+    margin-top: 80px; /* Move content down from the top */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font for header and main text */
+    text-align: center; /* Center align text */
+    color: #f7f7f7; /* Light color for text to contrast with background */
+}
+
+/* Heading (h1) Styling */
+.hero h1 {
+    font-family: 'Montserrat', sans-serif; /* Montserrat for the heading */
+    font-size: 60px; /* Large size for the heading */
+    color: #198754; /* Tomato color for the heading */
+    font-weight: 700; /* Bold weight for the heading */
+    text-transform: uppercase; /* Uppercase for a more striking look */
+    letter-spacing: 2px; /* Add space between letters */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); /* Text shadow for depth */
+}
+
+/* Paragraph Styling */
+.hero p {
+    font-family: 'Merriweather', serif; /* Merriweather font for the paragraph (contrast) */
+    font-size: 24px; /* Adjust the font size for the paragraph */
+    color: #ffffff; /* White color for the paragraph text */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 20px auto; /* Center the paragraph */
+    line-height: 1.8; /* Line height for better text spacing */
+    font-weight: 400; /* Regular weight for the paragraph */
+  
+}
+
+/* Add a subtle hover effect to the header text */
+
+/* Styling the button in the container of the hero section */
+.hero .container .btn {
+    font-family: 'Montserrat', sans-serif; /* Use the same font as the container */
+    font-size: 18px; /* Set a decent font size */
+    background-color: #28a745; /* Initial background color (green) */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Add padding for a larger button */
+    border-radius: 30px; /* Rounded corners for the button */
+    border: none; /* Remove default button border */
+    text-transform: uppercase; /* Uppercase text for a bold look */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Hover effect for the button */
+.hero .container .btn:hover {
+    background-color: #ffd700; /* Gold color when hovered */
+    color: #333; /* Change text color to dark when hovered */
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow depth */
+}
+
+/* Active state for the button */
+
+.hero .container .btn:active {
+    transform: translateY(2px); /* Slight push effect when clicked */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1); /* Reduce shadow depth */
+}
+/* Style for the sub-containers in the section */
+section .container .row .col-md-3 {
+    border: 2px solid hsl(0, 62%, 48%); /* Border around each container */
+    padding: 20px; /* Space inside the containers */
+    height: 350px; /* Fixed height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the sub-containers */
+section .container .row .col-md-3:hover {
+    transform: translateY(-10px); /* Slightly lift the container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
+}
+
+/* Optional: Styling for the images inside the containers */
+section .container .row .col-md-3 img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+  
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.abcde {
+    max-width: 90%; /* Adjust width to fit 4 cards */
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Flexbox Row */
+.class-row {
+    display: flex;
+    justify-content: space-between; /* Equal spacing between cards */
+    flex-wrap: nowrap; /* Ensures all cards stay in one row */
+    gap: 20px;
+    overflow-x: auto; /* Enable scrolling if needed */
+}
+
+/* Class Cards */
+.class-card {
+    background: white;
+    width: calc(100% / 4 - 20px); /* 4 cards in a row */
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.class-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+.class-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.class-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+.class-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Ensure Cards Always Stay in One Row */
+@media screen and (max-width: 1024px) {
+    .class-row {
+        overflow-x: scroll; /* Enables horizontal scrolling if screen is too small */
+    }
+
+    .class-card {
+        flex: 0 0 250px; /* Prevents shrinking */
+    }
+}
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    width:500px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    width: 500px;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-box button {
+    background: #28a745;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.search-box button:hover {
+    background: #218838;
+}
+
+.search-box:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.search-box input:focus {
+    width: 250px;
+}
+.search{
+    margin-top:10px;
+}
