@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="temp.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">FitLife</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Workouts</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn">Login</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Achieve Your Fitness Goals</h1>
+            <p>AI-powered workouts, progress tracking, and a strong fitness community.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="features-container">
+            <div class="feature-box">
+                <i class="fas fa-user"></i>
+                <h3>User Profiles</h3>
+                <p>Track your fitness journey with personalized dashboards.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Workout & Meal Plans</h3>
+                <p>AI-powered workout and meal plans tailored to your goals.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-chart-line"></i>
+                <h3>Progress Tracking</h3>
+                <p>Monitor your progress with analytics and fitness tracker sync.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-book"></i>
+                <h3>Content Hub</h3>
+                <p>Access blogs, videos, and tutorials for expert fitness advice.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>E-Commerce Integration</h3>
+                <p>Buy fitness products with exclusive discounts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FitLife. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+    });
+});
+    </script>
+
+</body>
+</html>

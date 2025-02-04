@@ -1,0 +1,81 @@
+/* Custom Checkbox Styling */
+.custom-checkbox {
+    display: block;
+    padding: 15px;
+    border: 2px solid #28a745; /* Green Border */
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative; /* Required for positioning the tick symbol */
+}
+
+.custom-checkbox input[type="radio"] {
+    display: none; /* Hide the default radio button */
+}
+
+.custom-checkbox .checkbox-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    padding-left: 30px; /* Space for the tick symbol */
+}
+
+/* Tick symbol using a pseudo-element */
+.custom-checkbox .checkbox-label::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #28a745;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+/* When the radio button is checked */
+.custom-checkbox input[type="radio"]:checked + .checkbox-label::before {
+    background-color: #28a745; /* Green background for the tick circle */
+    border-color: #28a745;
+}
+
+.custom-checkbox input[type="radio"]:checked + .checkbox-label::after {
+    content: "✔"; /* Tick symbol */
+    position: absolute;
+    left: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: white; /* White tick symbol */
+}
+
+/* Fill the entire box with color when selected */
+.custom-checkbox input[type="radio"]:checked ~ .checkbox-label {
+    color: #155724; /* Dark Green text */
+}
+
+.custom-checkbox input[type="radio"]:checked {
+    background-color: #d4edda; /* Light Green Background when checked */
+    border-color: #28a745; /* Green border when checked */
+}
+
+.custom-checkbox:hover {
+    background-color: #f0f0f0; /* Hover effect */
+}
+
+.custom-checkbox:active {
+    transform: scale(0.98); /* Slight scale effect on click */
+}
+
+/* Progress Bar */
+.progress {
+    height: 8px;
+}
+
+.progress-bar {
+    background-color: #28a745; /* Green Progress Bar */
+}

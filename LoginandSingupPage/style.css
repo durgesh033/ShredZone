@@ -1,0 +1,138 @@
+/* 🌿 Full Page Styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🏋️‍♂️ Left Section (Gym Background) */
+.left-section {
+    background: #16c975;
+    color: white; 
+    position: relative; 
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🏋️‍♂️ Dark Overlay for Readability */
+.left-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* 📜 Left Side Text Box */
+.text-box {
+    z-index: 2;
+    max-width: 80%;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.text-box h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* 📦 Right Side (Login Box) */
+.login-box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    border-left: 5px solid #4caf50;
+}
+
+/* 🏋️‍♂️ Bigger & Professional Gym Logo */
+.gym-logo {
+    width: 90px; /* Increased Logo Size */
+    margin-bottom: 10px;
+}
+
+/* 📋 Form Labels */
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* 🎯 Input Fields */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* ✅ Login Button */
+.btn-success {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #388e3c;
+}
+
+/* 🔗 Sign Up Link */
+p a {
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* 🔄 Animations */
+
+/* 📜 Left Side Text Fade-in Effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🎯 Input Fields + Button Slide-in Effect */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.next{
+    color: white;
+    text-decoration: none;
+}
